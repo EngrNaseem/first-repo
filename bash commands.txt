@@ -1,0 +1,138 @@
+Usefull commands
+
+git init                    # Initialize repository
+git clone URL               # Clone repository
+git status                  # Check status
+git add .                   # Stage changes
+git commit -m "message"     # Commit changes
+git push                    # Upload changes
+git pull                    # Download changes
+git log                     # View commit history
+
+Quick Productivity commands
+
+clear                       # Clear terminal
+history                     # Show command history
+alias ll='ls -la'           # Create shortcut
+which git                   # Find command location
+man ls                      # Manual page
+
+one-liner(show largest file)
+
+du -ah . | sort -rh | head -10
+
+count files in current directory 
+
+find . -type f | wc -l
+
+show current directory tree
+
+find .
+
+list files sorted by size 
+ls -lhS
+
+show hidden files
+
+ls -la
+
+file operations:
+
+touch file.txt              # Create file
+cp file.txt backup.txt      # Copy file
+mv file.txt newname.txt     # Rename file
+mv file.txt folder/         # Move file
+rm file.txt                 # Delete file
+rm -rf folder/              # Delete folder and contents
+
+Directory Operations
+
+mkdir project               # Create directory
+mkdir -p a/b/c              # Create nested directories
+rmdir emptyfolder           # Remove empty directory
+cd project                  # Enter directory
+cd ..                       # Go up one level
+cd ~                        # Go to home directory
+
+viewing files
+
+cat file.txt                # Display file contents
+less file.txt               # Scroll through file
+head file.txt               # First 10 lines
+head -20 file.txt           # First 20 lines
+tail file.txt               # Last 10 lines
+tail -f logfile.log         # Watch log updates live
+
+Searching 
+
+grep "error" logfile.txt    # Search text
+grep -i "hello" file.txt    # Ignore case
+grep -r "TODO" .            # Search recursively
+
+find . -name "*.txt"        # Find text files
+find . -type d              # Find directories
+
+System Information
+
+grep "error" logfile.txt    # Search text
+grep -i "hello" file.txt    # Ignore case
+grep -r "TODO" .            # Search recursively
+
+find . -name "*.txt"        # Find text files
+find . -type d              # Find directories
+
+Disk usage 
+
+df -h                       # Disk space
+du -sh folder/              # Folder size
+du -sh *                    # Size of all files/folders
+
+Processes
+
+ps                          # Running processes
+ps aux                      # Detailed process list
+top                         # Live process monitor
+kill 1234                   # Kill process by PID
+
+Networking
+
+ping google.com             # Test connectivity
+curl https://example.com    # Download webpage
+wget https://example.com/file.zip
+
+Archives
+
+zip archive.zip file.txt
+unzip archive.zip
+
+tar -czf backup.tar.gz folder/
+tar -xzf backup.tar.gz
+
+Permissions
+
+chmod +x script.sh          # Make executable
+chmod 755 script.sh         # Common permission setting
+
+Environmate Variables
+
+ echo $HOME                  # Home directory
+echo $PATH                  # Executable search path
+
+export NAME="John"
+echo $NAME
+
+Command History 
+
+history                     # Show command history
+!!                          # Run previous command
+!25                         # Run history command #25
+
+Redirection
+
+echo "Hello" > file.txt     # Overwrite file
+echo "World" >> file.txt    # Append to file
+
+ls > files.txt              # Save output to file
+cat file.txt | grep "Hello" # Pipe output
+
+
